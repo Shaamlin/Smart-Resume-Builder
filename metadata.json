@@ -1,0 +1,5 @@
+{
+  "name": "Smart Resume Generator AI",
+  "description": "A React and Tailwind CSS application that helps users create professional resumes with AI-powered enhancements using the Gemini API. Users can input their information, choose from various templates, and get AI assistance for their professional summary.",
+  "requestFramePermissions": []
+}

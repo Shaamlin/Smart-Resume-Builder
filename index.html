@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Resume Generator AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Custom Tailwind theme configuration (optional, but good for brand colors)
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3498db', // Tailwind blue-500 is #3b82f6
+              secondary: '#2ecc71', // Tailwind green-500 is #22c55e
+              dark: '#2c3e50', // Tailwind slate-800 is #1e293b
+              light: '#ecf0f1', // Tailwind slate-100 is #f1f5f9
+              danger: '#e74c3c', // Tailwind red-500 is #ef4444
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="print-container" style="display: none;"></div> <!-- For printing -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
